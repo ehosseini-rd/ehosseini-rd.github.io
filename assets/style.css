@@ -1,3 +1,40 @@
+.main-nav {
+  display: flex;
+  gap: 2.2rem;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 0.7rem;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.main-nav a {
+  color: #232946;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.08rem;
+  letter-spacing: 0.5px;
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+  position: relative;
+}
+.main-nav a:hover, .main-nav a:focus {
+  background: #3ec6e0;
+  color: #fff;
+  outline: none;
+}
+@media (max-width: 700px) {
+  .main-nav {
+    gap: 0.7rem;
+    font-size: 0.95rem;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1.2rem;
+  }
+}
 
 body {
   font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
