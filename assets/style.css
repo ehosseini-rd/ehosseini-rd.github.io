@@ -137,9 +137,12 @@ body {
   outline: none;
 }
 
+
 .main-content {
   flex: 1;
-  padding: 3.5rem 5vw 2rem 5vw;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3.5rem 2rem 2rem 2rem;
   background: #fff;
   min-height: 100vh;
   box-shadow: none;
