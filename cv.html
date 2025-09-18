@@ -5,6 +5,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV | Erfan Hosseini</title>
   <link rel="stylesheet" href="assets/style.css">
+  <style>
+    body {
+      font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+      background: #f5f7fa;
+      color: #232946;
+      margin: 0;
+      padding: 0;
+    }
+    .cv-container {
+      max-width: 820px;
+      margin: 2.5rem auto;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(44, 62, 80, 0.10);
+      padding: 2.5rem 2.5rem 2rem 2.5rem;
+    }
+    .cv-header {
+      text-align: center;
+      margin-bottom: 2.2rem;
+    }
+    .cv-header h1 {
+      font-size: 2.3rem;
+      font-weight: 800;
+      margin: 0 0 0.5rem 0;
+      color: #1a2340;
+      letter-spacing: 1px;
+    }
+    .cv-header .contact {
+      color: #3ec6e0;
+      font-size: 1.08rem;
+      margin-bottom: 0.2rem;
+    }
+    .cv-section {
+      margin-bottom: 2.2rem;
+    }
+    .cv-section h2 {
+      color: #3ec6e0;
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 1.1rem;
+      letter-spacing: 0.5px;
+      border-left: 4px solid #3ec6e0;
+      padding-left: 0.7rem;
+    }
+    .cv-section ul {
+      margin: 0 0 1.2rem 1.5rem;
+      padding: 0;
+    }
+    .cv-section li {
+      margin-bottom: 0.5rem;
+      font-size: 1.05rem;
+    }
+    .cv-section strong {
+      color: #232946;
+      font-weight: 700;
+    }
+    .cv-section em {
+      color: #b8c1ec;
+    }
+    .cv-section span[style*="float:right"] {
+      float: right;
+      color: #b8c1ec;
+      font-size: 0.98em;
+      font-weight: 500;
+    }
+    .cv-section ul ul {
+      margin-left: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    @media (max-width: 700px) {
+      .cv-container {
+        padding: 1.2rem 0.5rem;
+      }
+      .cv-header h1 {
+        font-size: 1.3rem;
+      }
+      .cv-section h2 {
+        font-size: 1.05rem;
+        padding-left: 0.3rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -20,95 +102,99 @@
     </nav>
   </header>
   <main>
-    <section>
-      <h2>Erfan Hosseini</h2>
-      <p><a href="mailto:Erfan76hosseini@gmail.com">Erfan76hosseini@gmail.com</a> | (334) 275-5862 | Auburn, AL</p>
-    </section>
-    <section>
-      <h2>Professional Summary</h2>
-      <p>PhD Candidate in Chemical Engineering with expertise in computational modeling, process simulation, and sustainability assessment for clean energy and material systems. Skilled in dynamic mechanistic modeling, Aspen Plus process design, techno-economic analysis (TEA), and life cycle assessment (LCA). Complementary background in machine learning and data-driven optimization. Published researcher with strong communication skills and proven ability to collaborate across disciplines to support research and development of innovative technologies.</p>
-    </section>
-    <section>
-      <h2>Education</h2>
-      <ul>
-        <li><strong>Auburn University, Auburn, AL</strong><br>
-        PhD, Chemical Engineering | GPA: 3.6/4.0 <span style="float:right">2022–Dec 2026 (expected)</span><br>
-        <em>Dissertation:</em> Valorization of pulp & paper mill waste via advanced modeling, TEA, and LCA<br>
-        <em>Relevant Coursework:</em> Stochastic Optimization, Linear Programming, Big Data & Machine Learning, Probability & Statistics
-        </li>
-        <li><strong>Sharif University of Technology, Tehran, Iran</strong><br>
-        B.Sc. Chemical Engineering <span style="float:right">2016–2021</span>
-        </li>
-      </ul>
-    </section>
-    <section>
-      <h2>Research / Professional Experience</h2>
-      <ul>
-        <li><strong>Graduate Researcher – Process Systems Engineering</strong> <span style="float:right">Aug 2022 – Present</span><br>
-        Auburn University
-          <ul>
-            <li>Built multi-stage anaerobic digestion models in Python to simulate microbial kinetics, equilibria, and inhibition mechanisms, improving methane yield predictions.</li>
-            <li>Designed Aspen Plus process flowsheets and conducted TEA to evaluate economic feasibility of waste-to-energy systems, including cash flow modeling, scenario evaluation.</li>
-            <li>Performed life cycle assessment (OpenLCA + ecoinvent) to quantify greenhouse gas emissions and sustainability trade-offs.</li>
-            <li>Performed sensitivity analyses to identify key profitability and environmental drivers, supporting optimization of industrial processes.</li>
-            <li>(ongoing) Developing Artificial Neural Network (ANN)-based surrogate models of Anaerobic Digestion Model for accelerated simulations and coupling with optimization to assess optimal operating strategies.</li>
-          </ul>
-        </li>
-        <li><strong>Machine Learning Researcher</strong> <span style="float:right">Aug 2022 – 2023</span><br>
-        Auburn University
-          <ul>
-            <li>Designed and trained CNN models for prediction of biological differentiation outcomes using image-based datasets.</li>
-            <li>Applied deep learning and supervised learning methods to improve predictive accuracy of experimental results.</li>
-            <li>Gained hands-on experience with CNN architectures, supervised learning, and image-based data analysis.</li>
-          </ul>
-        </li>
-        <li><strong>Teaching Assistant</strong><br>
-        Auburn University
-          <ul>
-            <li>Digital Process Control (Spring 2024): Supported instruction for 50+ students; led office hours and graded assignments, projects, and exams.</li>
-            <li>Introduction to Thermodynamics, Fluids, and Heat Transfer (Spring 2022): Assisted course delivery through grading and academic support for 50+ students.</li>
-          </ul>
-        </li>
-      </ul>
-    </section>
-    <section>
-      <h2>Technical Skills</h2>
-      <ul>
-        <li><strong>Modeling & Simulation:</strong> Aspen Plus, SuperPro Designer, MATLAB/Simulink, Python ODE solvers</li>
-        <li><strong>Mechanistic Modeling:</strong> Microbial kinetics, mass balances, equilibria, inhibition processes</li>
-        <li><strong>Optimization & Analysis:</strong> Pyomo, stochastic/linear optimization, sensitivity analysis</li>
-        <li><strong>Sustainability Tools:</strong> Techno-economic analysis, life cycle assessment (OpenLCA, ecoinvent)</li>
-        <li><strong>Machine Learning:</strong> CNNs, regression, PCA/PLS, SVMs, supervised learning</li>
-        <li><strong>Programming & Tools:</strong> Python, R, AMPL, Git, Microsoft Excel/PowerPoint</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Leadership & Campus Involvement</h2>
-      <ul>
-        <li><strong>Graduate Student Ambassador — Auburn University College of Engineering</strong> <span style="float:right">2025 – Present</span><br>
-        Selected as an ambassador based on academic excellence and leadership potential.<br>
-        Facilitate cross-department collaboration and networking among graduate students, strengthening the College of Engineering community.
-        </li>
-      </ul>
-    </section>
-    <section>
-      <h2>Publications & Conferences</h2>
-      <ul>
-        <li><strong>Peer-Reviewed Publications</strong>
-          <ul>
-            <li>Hosseini, E., Cremaschi, S., Jiang, Z. (2025). Opportunities and Challenges in Valorizing Pulp and Paper Sludge for Biogas Production via Anaerobic Digestion: A Review. <em>Sustainability Science and Technology</em>.</li>
-            <li>Hosseini, E., Cremaschi, S., Jiang, Z. (2024). Techno-Economic Analysis of Methane Production from Pulp and Paper Sludge. <em>Systems and Control Transactions, 3</em>.</li>
-          </ul>
-        </li>
-        <li><strong>Conference Presentations</strong>
-          <ul>
-            <li>Oral presentation: Hosseini, E., Cremaschi, S., Jiang, Z. (2024). Pulp and Paper Sludge Valorization: Techno-Economic and Life Cycle Assessment for Enhanced Methane Production. AIChE Annual Meeting 2024.</li>
-            <li>Poster presentation: Economic and Environmental Feasibility of Co-Digestion Strategies for Methane Production from Pulp and Paper Sludge. FOCAPD 2024.</li>
-            <li>Poster presentation: Sensitivity Analysis and Environmental Impact Reduction in Co-Digestion Systems. Green Materials Mini Symposium, Auburn University, 2025.</li>
-          </ul>
-        </li>
-      </ul>
-    </section>
+    <div class="cv-container">
+      <div class="cv-header">
+        <h1>Erfan Hosseini</h1>
+        <div class="contact">
+          <a href="mailto:Erfan76hosseini@gmail.com">Erfan76hosseini@gmail.com</a> &nbsp;|&nbsp; (334) 275-5862 &nbsp;|&nbsp; Auburn, AL
+        </div>
+      </div>
+      <div class="cv-section">
+        <h2>Professional Summary</h2>
+        <p>PhD Candidate in Chemical Engineering with expertise in computational modeling, process simulation, and sustainability assessment for clean energy and material systems. Skilled in dynamic mechanistic modeling, Aspen Plus process design, techno-economic analysis (TEA), and life cycle assessment (LCA). Complementary background in machine learning and data-driven optimization. Published researcher with strong communication skills and proven ability to collaborate across disciplines to support research and development of innovative technologies.</p>
+      </div>
+      <div class="cv-section">
+        <h2>Education</h2>
+        <ul>
+          <li><strong>Auburn University, Auburn, AL</strong><br>
+            PhD, Chemical Engineering | GPA: 3.6/4.0 <span style="float:right">2022–Dec 2026 (expected)</span><br>
+            <em>Dissertation:</em> Valorization of pulp & paper mill waste via advanced modeling, TEA, and LCA<br>
+            <em>Relevant Coursework:</em> Stochastic Optimization, Linear Programming, Big Data & Machine Learning, Probability & Statistics
+          </li>
+          <li><strong>Sharif University of Technology, Tehran, Iran</strong><br>
+            B.Sc. Chemical Engineering <span style="float:right">2016–2021</span>
+          </li>
+        </ul>
+      </div>
+      <div class="cv-section">
+        <h2>Research / Professional Experience</h2>
+        <ul>
+          <li><strong>Graduate Researcher – Process Systems Engineering</strong> <span style="float:right">Aug 2022 – Present</span><br>
+            Auburn University
+            <ul>
+              <li>Built multi-stage anaerobic digestion models in Python to simulate microbial kinetics, equilibria, and inhibition mechanisms, improving methane yield predictions.</li>
+              <li>Designed Aspen Plus process flowsheets and conducted TEA to evaluate economic feasibility of waste-to-energy systems, including cash flow modeling, scenario evaluation.</li>
+              <li>Performed life cycle assessment (OpenLCA + ecoinvent) to quantify greenhouse gas emissions and sustainability trade-offs.</li>
+              <li>Performed sensitivity analyses to identify key profitability and environmental drivers, supporting optimization of industrial processes.</li>
+              <li>(ongoing) Developing Artificial Neural Network (ANN)-based surrogate models of Anaerobic Digestion Model for accelerated simulations and coupling with optimization to assess optimal operating strategies.</li>
+            </ul>
+          </li>
+          <li><strong>Machine Learning Researcher</strong> <span style="float:right">Aug 2022 – 2023</span><br>
+            Auburn University
+            <ul>
+              <li>Designed and trained CNN models for prediction of biological differentiation outcomes using image-based datasets.</li>
+              <li>Applied deep learning and supervised learning methods to improve predictive accuracy of experimental results.</li>
+              <li>Gained hands-on experience with CNN architectures, supervised learning, and image-based data analysis.</li>
+            </ul>
+          </li>
+          <li><strong>Teaching Assistant</strong><br>
+            Auburn University
+            <ul>
+              <li>Digital Process Control (Spring 2024): Supported instruction for 50+ students; led office hours and graded assignments, projects, and exams.</li>
+              <li>Introduction to Thermodynamics, Fluids, and Heat Transfer (Spring 2022): Assisted course delivery through grading and academic support for 50+ students.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="cv-section">
+        <h2>Technical Skills</h2>
+        <ul>
+          <li><strong>Modeling & Simulation:</strong> Aspen Plus, SuperPro Designer, MATLAB/Simulink, Python ODE solvers</li>
+          <li><strong>Mechanistic Modeling:</strong> Microbial kinetics, mass balances, equilibria, inhibition processes</li>
+          <li><strong>Optimization & Analysis:</strong> Pyomo, stochastic/linear optimization, sensitivity analysis</li>
+          <li><strong>Sustainability Tools:</strong> Techno-economic analysis, life cycle assessment (OpenLCA, ecoinvent)</li>
+          <li><strong>Machine Learning:</strong> CNNs, regression, PCA/PLS, SVMs, supervised learning</li>
+          <li><strong>Programming & Tools:</strong> Python, R, AMPL, Git, Microsoft Excel/PowerPoint</li>
+        </ul>
+      </div>
+      <div class="cv-section">
+        <h2>Leadership & Campus Involvement</h2>
+        <ul>
+          <li><strong>Graduate Student Ambassador — Auburn University College of Engineering</strong> <span style="float:right">2025 – Present</span><br>
+            Selected as an ambassador based on academic excellence and leadership potential.<br>
+            Facilitate cross-department collaboration and networking among graduate students, strengthening the College of Engineering community.
+          </li>
+        </ul>
+      </div>
+      <div class="cv-section">
+        <h2>Publications & Conferences</h2>
+        <ul>
+          <li><strong>Peer-Reviewed Publications</strong>
+            <ul>
+              <li>Hosseini, E., Cremaschi, S., Jiang, Z. (2025). Opportunities and Challenges in Valorizing Pulp and Paper Sludge for Biogas Production via Anaerobic Digestion: A Review. <em>Sustainability Science and Technology</em>.</li>
+              <li>Hosseini, E., Cremaschi, S., Jiang, Z. (2024). Techno-Economic Analysis of Methane Production from Pulp and Paper Sludge. <em>Systems and Control Transactions, 3</em>.</li>
+            </ul>
+          </li>
+          <li><strong>Conference Presentations</strong>
+            <ul>
+              <li>Oral presentation: Hosseini, E., Cremaschi, S., Jiang, Z. (2024). Pulp and Paper Sludge Valorization: Techno-Economic and Life Cycle Assessment for Enhanced Methane Production. AIChE Annual Meeting 2024.</li>
+              <li>Poster presentation: Economic and Environmental Feasibility of Co-Digestion Strategies for Methane Production from Pulp and Paper Sludge. FOCAPD 2024.</li>
+              <li>Poster presentation: Sensitivity Analysis and Environmental Impact Reduction in Co-Digestion Systems. Green Materials Mini Symposium, Auburn University, 2025.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
   </main>
   <footer>
     <p>&copy; 2025 Erfan Hosseini</p>
