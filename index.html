@@ -3,13 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Erfan Hosseini, Ph.D. Candidate in Chemical Engineering at Auburn University, specializing in process systems engineering, bioprocess modeling, and techno-economic analysis.">
+  <meta name="theme-color" content="#124b73">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <title>Erfan Hosseini | Academic Website</title>
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <header class="top-nav">
-    <a class="site-title" href="index.html">Erfan Hosseini</a>
-    <nav>
+    <a class="site-title" href="index.html" aria-current="page">Erfan Hosseini</a>
+    <nav aria-label="Primary">
       <a href="cv.html">CV</a>
       <a href="publications.html">Publications</a>
       <a href="research.html">Research</a>
@@ -17,37 +21,37 @@
     </nav>
   </header>
   <div class="page-body">
-    <aside class="sidebar">
-      <img src="assets/headshot.jpg" alt="Erfan Hosseini" class="profile-img">
+    <aside class="sidebar" aria-label="Profile">
+      <img src="assets/headshot.jpg" alt="Erfan Hosseini" class="profile-img" width="150" height="150">
       <h2 class="sidebar-name">Erfan Hosseini</h2>
       <p class="sidebar-title">Ph.D. Candidate, Chemical Engineering</p>
       <ul class="sidebar-links">
-        <li><a href="mailto:ezh0061@auburn.edu"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/gmail.svg" alt="" class="icon">Email</a></li>
-        <li><a href="https://scholar.google.com/citations?user=k8LGG2kAAAAJ&hl=en" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googlescholar.svg" alt="" class="icon">Google Scholar</a></li>
-        <li><a href="https://github.com/ehosseini-rd" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" alt="" class="icon">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/erfan-hosseini-b9a769190/" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg" alt="" class="icon">LinkedIn</a></li>
+        <li><a href="mailto:ezh0061@auburn.edu"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/gmail.svg" alt="" class="icon" width="16" height="16">Email</a></li>
+        <li><a href="https://scholar.google.com/citations?user=k8LGG2kAAAAJ&hl=en" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googlescholar.svg" alt="" class="icon" width="16" height="16">Google Scholar<span class="sr-only"> (opens in new tab)</span></a></li>
+        <li><a href="https://github.com/ehosseini-rd" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" alt="" class="icon" width="16" height="16">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+        <li><a href="https://www.linkedin.com/in/erfan-hosseini-b9a769190/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg" alt="" class="icon" width="16" height="16">LinkedIn<span class="sr-only"> (opens in new tab)</span></a></li>
       </ul>
     </aside>
-    <main class="content">
+    <main class="content" id="main-content">
       <h1>Home Page</h1>
       <p>Process Systems Engineering Ph.D. Candidate in Chemical Engineering with experience developing first-principles, hybrid, and data-driven models for chemical, biological, and process systems. Skilled in dynamic simulation, parameter estimation, sensitivity analysis, optimization, techno-economic analysis, and life cycle assessment using Python, MATLAB, Aspen Plus, SuperPro Designer, OpenLCA, and Pyomo. Experienced in translating experimental and literature data into validated computational workflows to support process understanding, operating-condition selection, scale-up analysis, and technology evaluation. Additional experience applying machine learning, image analysis, and data analytics workflows to biomanufacturing and biological systems.</p>
 
       <h2>Education</h2>
       <ul>
-        <li><strong>Auburn University, Auburn, AL</strong><br>
-          Ph.D. Candidate, Chemical Engineering | GPA: 3.6/4.0 <span style="float:right">Expected: Spring 2027</span><br>
+        <li><div class="entry-header"><strong>Auburn University, Auburn, AL</strong><span class="entry-date">Expected: Spring 2027</span></div>
+          Ph.D. Candidate, Chemical Engineering | GPA: 3.6/4.0<br>
           <em>Advisor:</em> Dr. Selen Cremaschi<br>
           <em>Research focus:</em> Process systems engineering, first-principles bioprocess modeling, dynamic simulation, process optimization, and sustainability assessment of waste-to-energy systems<br>
           <em>Relevant Graduate Coursework (all graded 4.0/4.0):</em> Stochastic Optimization, Linear Programming, Big Data and Machine Learning in the Process Industry, Probability and Statistics for Data Science, Advanced Biochemical Engineering
         </li>
-        <li><strong>Sharif University of Technology, Tehran, Iran</strong><br>
-          B.Sc. Chemical Engineering <span style="float:right">Completed: 2021</span>
+        <li><div class="entry-header"><strong>Sharif University of Technology, Tehran, Iran</strong><span class="entry-date">Completed: 2021</span></div>
+          B.Sc. Chemical Engineering
         </li>
       </ul>
 
       <h2>Research Experience</h2>
       <ul>
-        <li><strong>Graduate Researcher, Process Systems Engineering</strong> <span style="float:right">Aug 2022 – Present</span><br>
+        <li><div class="entry-header"><strong>Graduate Researcher, Process Systems Engineering</strong><span class="entry-date">Aug 2022 – Present</span></div>
           Auburn University
           <ul>
             <li>Implemented Python-based first-principles dynamic models for complex bioprocess systems involving nonlinear reaction kinetics, gas-liquid mass transfer, phase equilibria, ionic speciation, and pH-dependent inhibition behavior.</li>
@@ -64,7 +68,7 @@
             <li>Developing a multiscale NaOH pretreatment and anaerobic digestion modeling framework to connect microstructure-informed accessibility changes with calibrated hydrolysis kinetics for improved methane production prediction.</li>
           </ul>
         </li>
-        <li><strong>Machine Learning Researcher</strong> <span style="float:right">Aug 2022 – 2024</span><br>
+        <li><div class="entry-header"><strong>Machine Learning Researcher</strong><span class="entry-date">Aug 2022 – 2024</span></div>
           Auburn University
           <ul>
             <li>Replicated and validated prior group work on CNN-based classification of cardiomyocyte differentiation outcomes using phase-contrast microscopy images and experimental process features.</li>
@@ -77,7 +81,7 @@
 
       <h2>Teaching Experience</h2>
       <ul>
-        <li><strong>Graduate Teaching Assistant</strong> <span style="float:right">Jan 2022 – May 2024</span><br>
+        <li><div class="entry-header"><strong>Graduate Teaching Assistant</strong><span class="entry-date">Jan 2022 – May 2024</span></div>
           Auburn University
           <ul>
             <li>Supported instruction, grading, and student mentoring for Digital Process Control and Introduction to Thermodynamics, Fluids, and Heat Transfer.</li>
@@ -87,14 +91,14 @@
 
       <h2>Leadership and Service</h2>
       <ul>
-        <li><strong>Biomanufacturing Workshop Co-Leader</strong> <span style="float:right">Feb 2024</span><br>
+        <li><div class="entry-header"><strong>Biomanufacturing Workshop Co-Leader</strong><span class="entry-date">Feb 2024</span></div>
           Alabama State University
           <ul>
             <li>Developed and delivered a technical workshop for undergraduate REU students on data analytics and machine learning applications in industrial biomanufacturing.</li>
             <li>Introduced students to practical examples of how data-driven methods can support bioprocess monitoring, analysis, and decision-making.</li>
           </ul>
         </li>
-        <li><strong>College of Engineering Graduate Students Ambassador</strong> <span style="float:right">Aug 2025 – Present</span><br>
+        <li><div class="entry-header"><strong>College of Engineering Graduate Students Ambassador</strong><span class="entry-date">Aug 2025 – Present</span></div>
           Auburn University College of Engineering
           <ul>
             <li>Support graduate student engagement, professional networking, and communication between engineering graduate students, faculty, and college administration.</li>
@@ -116,7 +120,7 @@
       <h2>Publications &amp; Conferences</h2>
       <ul>
         <li>Hosseini, E., Cremaschi, S., Jiang, Z. (2026). Techno-economic and life cycle assessment of anaerobic digestion strategies for pulp and paper mill sludge under combined heat and power and biomethane upgrading pathways. <em>Manuscript ready for submission</em>.</li>
-        <li>Hosseini, E., Cremaschi, S., Jiang, Z. (2025). Opportunities and challenges in valorizing pulp and paper sludge for biogas production via anaerobic digestion: A review. <em>Sustainability Science and Technology, 2</em>, 032001. DOI: <a href="https://doi.org/10.1088/2977-3504/add9a6" target="_blank">10.1088/2977-3504/add9a6</a>.</li>
+        <li>Hosseini, E., Cremaschi, S., Jiang, Z. (2025). Opportunities and challenges in valorizing pulp and paper sludge for biogas production via anaerobic digestion: A review. <em>Sustainability Science and Technology, 2</em>, 032001. DOI: <a href="https://doi.org/10.1088/2977-3504/add9a6" target="_blank" rel="noopener noreferrer">10.1088/2977-3504/add9a6<span class="sr-only"> (opens in new tab)</span></a>.</li>
         <li>Hosseini, E., Cremaschi, S., Jiang, Z. (2024). Techno-economic analysis of methane production from pulp and paper sludge. <em>Systems and Control Transactions, 3</em>, 750–756.</li>
         <li><strong>Oral Presentation:</strong> Pulp and Paper Sludge Valorization: Techno-Economic and Life Cycle Assessment for Enhanced Methane Production. AIChE Annual Meeting, San Diego, CA, 2024.</li>
         <li><strong>Poster Presentation:</strong> Economic and Environmental Feasibility of Co-Digestion Strategies for Methane Production. FOCAPD, Breckenridge, CO, 2024.</li>
@@ -125,7 +129,7 @@
   </div>
   <footer class="site-footer">
     <ul class="footer-links">
-      <li><a href="https://github.com/ehosseini-rd" target="_blank">GitHub</a></li>
+      <li><a href="https://github.com/ehosseini-rd" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
       <li><a href="mailto:ezh0061@auburn.edu">Email</a></li>
     </ul>
     <p>&copy; 2026 Erfan Hosseini</p>
