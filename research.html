@@ -7,30 +7,45 @@
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <header>
-    <h1>Erfan Hosseini</h1>
+  <header class="top-nav">
+    <a class="site-title" href="index.html">Erfan Hosseini</a>
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <a href="cv.html">CV</a>
+      <a href="publications.html">Publications</a>
+      <a href="research.html">Research</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
-  <main>
-    <section>
-      <h2>Research</h2>
-      <p>[Brief description of your research interests and projects.]</p>
-      <ul>
-        <li>[Project Title] - [Short description]</li>
-        <li>[Project Title] - [Short description]</li>
+  <div class="page-body">
+    <aside class="sidebar">
+      <img src="assets/profile-placeholder.png" alt="Erfan Hosseini" class="profile-img">
+      <h2 class="sidebar-name">Erfan Hosseini</h2>
+      <p class="sidebar-title">Ph.D. Candidate, Chemical Engineering</p>
+      <ul class="sidebar-links">
+        <li><a href="mailto:ezh0061@auburn.edu"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/gmail.svg" alt="" class="icon">Email</a></li>
+        <li><a href="https://scholar.google.com/citations?user=k8LGG2kAAAAJ&hl=en" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googlescholar.svg" alt="" class="icon">Google Scholar</a></li>
+        <li><a href="https://github.com/ehosseini-rd" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" alt="" class="icon">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/erfan-hosseini-b9a769190/" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg" alt="" class="icon">LinkedIn</a></li>
       </ul>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2025 Erfan Hosseini</p>
+    </aside>
+    <main class="content">
+      <h1>Research</h1>
+      <p>My research focuses on process systems engineering, first-principles bioprocess modeling, dynamic simulation, process optimization, and sustainability assessment of waste-to-energy systems, advised by Dr. Selen Cremaschi at Auburn University.</p>
+      <ul>
+        <li><strong>First-Principles Bioprocess Modeling</strong> – Python-based dynamic models for anaerobic digestion involving nonlinear reaction kinetics, gas-liquid mass transfer, phase equilibria, ionic speciation, and pH-dependent inhibition, calibrated with nonlinear parameter estimation and constrained chi-squared minimization.</li>
+        <li><strong>Process Simulation and Scale-Up</strong> – Aspen Plus and SuperPro Designer process models for gas upgrading, separation, and combined heat and power configurations, used to evaluate scale-sensitive design variables such as hydraulic retention time, organic loading rate, feed composition, and reactor volume.</li>
+        <li><strong>Techno-Economic Analysis and Life Cycle Assessment</strong> – Integrated process simulation with techno-economic analysis and life cycle assessment to compare pulp and paper mill sludge valorization pathways based on performance, capital and operating cost, and environmental impact.</li>
+        <li><strong>Microstructure-Informed Process Modeling</strong> – Representing pulp and paper mill sludge as a heterogeneous fibrous structure to quantify cellulose accessibility for hydrolysis modeling, and developing a multiscale NaOH pretreatment and anaerobic digestion framework linking accessibility changes to calibrated hydrolysis kinetics for improved methane production prediction.</li>
+        <li><strong>Machine Learning for Biomanufacturing</strong> – CNN-based image analysis workflows for classifying cardiomyocyte differentiation outcomes from phase-contrast microscopy images, applying data preprocessing, model training, and performance evaluation.</li>
+      </ul>
+    </main>
+  </div>
+  <footer class="site-footer">
+    <ul class="footer-links">
+      <li><a href="https://github.com/ehosseini-rd" target="_blank">GitHub</a></li>
+      <li><a href="mailto:ezh0061@auburn.edu">Email</a></li>
+    </ul>
+    <p>&copy; 2026 Erfan Hosseini</p>
   </footer>
 </body>
 </html>
