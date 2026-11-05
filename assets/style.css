@@ -364,3 +364,31 @@ section[id] { scroll-margin-top:2rem; }
 figcaption { font-size:.8rem; color:var(--color-muted); margin-top:1rem; }
 @media(max-width:950px) { .themes {grid-template-columns:1fr;} .content{padding:1.7rem;} .page-body{gap:1.5rem;} }
 @media(max-width:700px) { .sidebar {display:grid;grid-template-columns:85px 1fr;gap:0 1rem;padding:1rem;} .profile-img{grid-row:1/3;width:80px;height:80px;margin:0;} .sidebar-name,.sidebar-title{text-align:left;} .sidebar-title{margin-bottom:0;} .sidebar-links{grid-column:1/-1;display:flex;flex-wrap:wrap;margin-top:1rem;padding-top:.5rem;} .sidebar-links a{font-size:.8rem;} .content{padding:1.5rem;} .process-flow{flex-direction:column;} .process-flow b{transform:rotate(90deg);} .metrics{gap:1.2rem;} }
+
+/* Personal identity from Erfan's business card. */
+:root {
+  --color-ink:#203f34; --color-text:#30483e; --color-muted:#5e7167;
+  --color-accent:#306341; --color-accent-dark:#203f34;
+  --color-bg:#faf9f3; --color-surface:#fffefa; --color-border:#dfe5d9;
+  --focus-ring:3px solid #306341; --brand-lime:#68d343;
+}
+.top-nav { background:var(--color-bg); }
+.site-title { display:inline-flex; align-items:center; gap:.55rem; }
+.brand-mascot { width:44px; height:44px; object-fit:contain; mix-blend-mode:multiply; flex-shrink:0; }
+.brand-intro { display:flex; align-items:center; justify-content:space-between; gap:1rem; margin-bottom:1.2rem; }
+.brand-intro .eyebrow { margin-bottom:0; }
+.hero-mascot { width:104px; height:104px; object-fit:contain; mix-blend-mode:multiply; flex-shrink:0; }
+.pixel-signature { display:flex; gap:7px; margin-bottom:1rem; }
+.pixel-signature i { width:9px; height:9px; background:var(--brand-lime); }
+.themes article { border-top-color:var(--brand-lime); }
+.finding { background:#f0f5e9; border-left-color:var(--color-accent); }
+.button:hover { background:#315b43; }
+.actions .button + .button { background:var(--color-surface); }
+.contact-card { margin:1.8rem 0 1rem; }
+.contact-card a { display:block; border:1px solid var(--color-border); border-radius:8px; overflow:hidden; }
+.contact-card img { display:block; width:100%; height:auto; }
+@media(max-width:700px) {
+  .brand-intro { gap:.5rem; }
+  .hero-mascot { width:76px; height:76px; }
+  .brand-intro .eyebrow { font-size:.7rem; letter-spacing:.08em; }
+}
