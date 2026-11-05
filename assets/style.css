@@ -389,3 +389,32 @@ figcaption { font-size:.8rem; color:var(--color-muted); margin-top:1rem; }
   .hero-mascot { width:76px; height:76px; }
   .brand-intro .eyebrow { font-size:.7rem; letter-spacing:.08em; }
 }
+
+/* Conceptual research workflows. */
+.concept-diagram { margin:1.7rem 0; padding:1.25rem; background:#f3f6ed; border:1px solid #d9e2d1; border-radius:8px; }
+.concept-flow { display:grid; grid-template-columns:minmax(0,1fr) 20px minmax(0,1fr) 20px minmax(0,1fr); align-items:start; gap:.7rem; }
+.concept-node { min-width:0; }
+.concept-icon { display:block; width:34px; height:34px; color:var(--color-accent); margin:0 0 .8rem; flex-shrink:0; }
+.concept-label { display:block; color:var(--color-accent); text-transform:uppercase; font-size:.67rem; letter-spacing:.08em; font-weight:700; margin-bottom:.5rem; }
+.concept-node strong { display:block; color:var(--color-ink); font-size:.96rem; line-height:1.4; }
+.content .concept-diagram p { font-size:.86rem; line-height:1.55; margin:.5rem 0 0; }
+.concept-arrow { color:var(--color-accent); font-size:1.4rem; padding-top:3.4rem; text-align:center; }
+.concept-diagram figcaption { border-top:1px solid #d9e2d1; padding-top:.9rem; margin-top:1.2rem; font-size:.8rem; line-height:1.6; }
+.assessment-source,.assessment-outcome { display:flex; gap:1rem; align-items:center; padding:.6rem; }
+.assessment-source .concept-icon,.assessment-outcome .concept-icon { margin:0; }
+.assessment-source strong,.assessment-outcome strong { color:var(--color-ink); }
+.assessment-branches { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin:1.1rem 0; }
+.assessment-branches .concept-node { padding:1.2rem; background:var(--color-surface); border:1px solid #d9e2d1; border-top:3px solid #78a779; border-radius:4px; }
+.assessment-branches .concept-node + .concept-node { border-top-color:#547b75; }
+.assessment-outcome { border-top:1px solid #d9e2d1; padding-top:1rem; }
+@media(max-width:950px) {
+ .concept-flow { grid-template-columns:1fr; gap:.8rem; }
+ .concept-arrow { padding:0; line-height:1; transform:rotate(90deg); justify-self:start; margin-left:.4rem; }
+ .concept-node { padding:.2rem; }
+ .concept-flow .concept-icon { float:left; margin:.15rem .9rem 0 0; }
+ .concept-flow .concept-node p { clear:both; padding-top:.3rem; }
+}
+@media(max-width:500px) {
+ .assessment-branches { grid-template-columns:1fr; }
+ .concept-diagram { padding:1rem; }
+}
