@@ -373,8 +373,8 @@ figcaption { font-size:.8rem; color:var(--color-muted); margin-top:1rem; }
   --focus-ring:3px solid #306341; --brand-lime:#68d343;
 }
 .top-nav { background:var(--color-bg); }
-.site-title { display:inline-flex; align-items:center; gap:.55rem; }
-.brand-mascot { width:44px; height:44px; object-fit:contain; mix-blend-mode:multiply; flex-shrink:0; }
+.site-title { display:inline-flex; align-items:center; gap:.55rem; line-height:1.2; }
+.brand-mascot { display:block; width:44px; height:44px; object-fit:contain; mix-blend-mode:multiply; flex-shrink:0; }
 .brand-intro { display:flex; align-items:center; justify-content:space-between; gap:1rem; margin-bottom:1.2rem; }
 .brand-intro .eyebrow { margin-bottom:0; }
 .hero-mascot { width:104px; height:104px; object-fit:contain; mix-blend-mode:multiply; flex-shrink:0; }
